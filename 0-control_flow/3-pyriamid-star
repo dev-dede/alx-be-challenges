@@ -1,0 +1,18 @@
+rows = int(input("Enter a number for the height of the pyriamid: "))
+i = 1 #Variable to keep track of rows
+
+while i <= rows:
+    spaces = rows - i 
+    j = 0 #Variable to keep track of leading spaces
+    while j < spaces:
+        print(" ", end="")
+        j += 1
+
+    stars = 2 * i - 1
+    k = 0 #Variable to keep track of printed stars
+    while k < stars:
+        print("*", end="")
+        k += 1
+
+    i += 1
+    print()
